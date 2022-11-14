@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+    <body class="teory">
+        <h1 class="titulos">LA FUERZA DE ATRACCIÓN</h1>
+        <h3>TEORÍA</h3>
+        <p>Según la ley de gravitación universal de Newton, la fuerza de atracción entre dos cuerpos viene dada por:</p>
+        <p>
+            <center><img src="form.jpg" style="width:20% ;" <a> </center>
+        </p>
+        <p>donde m₁ y m₂ son las masas de los cuerpos, r es la distancia entre los cuerpos y G = 6,67 × 10 -¹¹ N-m²/kg² es la constante gravitatoria universal. </p>
+        <h3>IMÁGENES</h3>
+        <center>
+
+
+            <img src="img1.jpg" style="width:30% ;" <a>
+            <img src="img2.jpg" style="width:30% ;" <a><br>
+            <img src="img3.jpg" style="width:30% ;" <a>
+            <img src="img4.jpg" style="width:30% ;" <a>
+
+
+        </center>
+        <h3>FORMULARIO</h3>
+    </body>
+
+    <body>
+
+        <div class="respuesta">
+            INTRODUCIR m(1):
+            <input type="number" id=a><br><br> INTRODUCIR m(2) :
+            <input type="number" id=b><br><br> INTRODUCIR LA DISTANCIA :
+            <input type="number" id=c><br><br>
+            <button onclick="fuerza()">CALCULAR
+            </button>
+            <h2>LA FUERZA DE ATRACCIÓN ES:</h2>
+            <div id="FACTORIZAR">
+
+            </div>
+        </div>
+
+
+    </body>
+
+</body>
+
+</div>
+</div>
+<script>
+    function fuerza() {
+        var g = 6.67 * 10 ** (-11)
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+        var e1 = g * (a * b) / c ** 2
+        document.getElementById('FACTORIZAR').innerHTML = e1
+    }
+</script>
+</body>
+<h3>EJEMPLOS:</h3>
+<p>TIERRA - SOL - LUNA</p>
+<p> Determina cuántas veces la fuerza de atracción entre el sol y la tierra es mayor que la fuerza de atracción entre la tierra y la luna. La distancia entre el sol y la Tierra es de 149,6 × 10 m, la distancia entre la luna y la Tierra es de 384,4 × 10 m,
+    mTierra = 5,98 × 10²8 kg, msun = 2,0 × 10³0 kg y mmun = 7,36 × 10²² kg. </p>
+<img src="ej.jpg" style="width:100% ;" <a>
+
+</html>
